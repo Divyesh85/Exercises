@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "e497f06f-02bc-4473-87fc-978b86add05f"
+        },
+        "name": {
+            "value": "task1Exercise"
+        },
+        "location": {
+            "value": "France Central"
+        },
+        "hostingPlanName": {
+            "value": "ASP-vm1group-9414"
+        },
+        "serverFarmResourceGroup": {
+            "value": "vm1_group"
+        },
+        "alwaysOn": {
+            "value": false
+        },
+        "sku": {
+            "value": "Basic"
+        },
+        "skuCode": {
+            "value": "B1"
+        },
+        "workerSize": {
+            "value": "0"
+        },
+        "workerSizeId": {
+            "value": "0"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "linuxFxVersion": {
+            "value": "PYTHON|3.8"
+        },
+        "repoUrl": {
+            "value": "https://github.com/Presumably/Task1"
+        },
+        "branch": {
+            "value": "main"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postfacto-deployment
+  labels:
+    app: postfacto
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: postfacto
+  template:
+    metadata:
+      labels:
+        app: postfacto
+    spec:
+      containers:
+      - name: postfacto
+        image: postfacto/postfacto
+        ports:
+        - containerPort: 80

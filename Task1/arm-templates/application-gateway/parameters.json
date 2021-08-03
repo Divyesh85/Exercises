@@ -1,0 +1,42 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "applicationGatewayName": {
+            "value": "ag_1"
+        },
+        "tier": {
+            "value": "WAF_v2"
+        },
+        "skuSize": {
+            "value": "WAF_v2"
+        },
+        "capacity": {
+            "value": 0
+        },
+        "subnetName": {
+            "value": "ag_subnet"
+        },
+        "zones": {
+            "value": []
+        },
+        "publicIpAddressName": {
+            "value": "ag"
+        },
+        "sku": {
+            "value": "Standard"
+        },
+        "allocationMethod": {
+            "value": "Static"
+        },
+        "publicIpZones": {
+            "value": []
+        },
+        "autoScaleMaxCapacity": {
+            "value": 10
+        }
+    }
+}
